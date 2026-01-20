@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope & Hoisting - JavaScript Bootcamp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .output {
+            background: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🎯 Scope & Hoisting</h1>
+        
+        <div id="output" class="output">Çıktılar burada görünecek...</div>
+        
+        <button onclick="scopeDemo()">1. Scope Örneği</button>
+        <button onclick="hoistingDemo()">2. Hoisting</button>
+        <button onclick="varVsLetConst()">3. var vs let vs const</button>
+        <button onclick="scopeChain()">4. Scope Chain</button>
+        <button onclick="temizle()">Temizle</button>
+    </div>
+
+    <script src="scope.js"></script>
+</body>
+</html>

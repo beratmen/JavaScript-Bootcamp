@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON & Veri Formatları - JavaScript Bootcamp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .output {
+            background: #f9f9f9;
+            border-left: 4px solid #007bff;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        button {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🔧 JSON & Veri Formatları</h1>
+        
+        <h2>Çalışan Kaydı Örneği</h2>
+        <div id="output" class="output">Çıktılar burada görünecek...</div>
+        
+        <button onclick="demoStringify()">1. JSON.stringify()</button>
+        <button onclick="demoParse()">2. JSON.parse()</button>
+        <button onclick="demoLocalStorage()">3. localStorage Örneği</button>
+        <button onclick="demoHatayonetimi()">4. Hata Yönetimi</button>
+        <button onclick="temizle()">Temizle</button>
+    </div>
+
+    <script src="json.js"></script>
+</body>
+</html>

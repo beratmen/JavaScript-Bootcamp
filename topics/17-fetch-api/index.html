@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch API - JavaScript Bootcamp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        .container {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 { color: #333; }
+        .output {
+            background: #f9f9f9;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 4px;
+            font-family: 'Courier New', monospace;
+            font-size: 12px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            margin: 5px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        button:hover { background: #218838; }
+        button:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+        }
+        .loading {
+            color: #ff9800;
+            font-weight: bold;
+        }
+        .error {
+            color: #d32f2f;
+            font-weight: bold;
+        }
+        .success {
+            color: #388e3c;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🌐 Fetch API - İnternet Üzerinden Veri Çekmek</h1>
+        
+        <div id="output" class="output">Çıktılar burada görünecek...</div>
+        
+        <button onclick="fetchUsers()">1. GET - Kullanıcıları Çek</button>
+        <button onclick="fetchPosts()">2. GET - Yazıları Çek</button>
+        <button onclick="fetchUserDetail()">3. GET - Özel Veri Çek</button>
+        <button onclick="postYeniKullanici()">4. POST - Yeni Kullanıcı</button>
+        <button onclick="errorOrnek()">5. Hata Yönetimi</button>
+        <button onclick="asyncAwaitOrnek()">6. Async/Await</button>
+        <button onclick="temizle()">Temizle</button>
+        
+        <h3>⚠️ Not:</h3>
+        <p>Bu örnek JSONPlaceholder test API'sini kullanır. İnternet bağlantısı gereklidir.</p>
+    </div>
+
+    <script src="fetch.js"></script>
+</body>
+</html>

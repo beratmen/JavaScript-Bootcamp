@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App - JavaScript Projesi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="todo-app">
+            <h1>📝 Yapılacaklar Listesi</h1>
+            
+            <div class="input-section">
+                <input 
+                    type="text" 
+                    id="todoInput" 
+                    placeholder="Yeni bir görev ekle..."
+                    class="todo-input"
+                >
+                <button id="addBtn" class="add-btn">+ Ekle</button>
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" onclick="filterTodos('all')">Tümü</button>
+                <button class="filter-btn" onclick="filterTodos('active')">Aktif</button>
+                <button class="filter-btn" onclick="filterTodos('completed')">Tamamlanan</button>
+            </div>
+            
+            <div class="stats">
+                <span id="totalTodos">0</span> görev | 
+                <span id="completedCount">0</span> tamamlandi
+            </div>
+            
+            <ul id="todoList" class="todo-list"></ul>
+            
+            <div class="actions">
+                <button id="clearBtn" class="clear-btn">Tamamlanmışları Temizle</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
